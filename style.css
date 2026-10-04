@@ -28,3 +28,14 @@ h1 {
     left: 16.9%;
     transform: translate(-50%, -50%);
 }
+
+#center-hole {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 100%;
+    position: absolute;
+    top: 55%;
+    left: 16.9%;
+    transform: translate(-50%, -50%);
+}
