@@ -28,7 +28,7 @@ h1 {
     top: 55%;
     left: 16.9%;
     transform: translate(-50%, -50%);
-    margin-left: 57px;
+    margin-left: 30px;
     animation: spin 3s linear infinite;
     background: linear-gradient(45deg, #ff0000, #ffff00, #02ffea, #ff00c8);
 }
@@ -41,12 +41,22 @@ h1 {
     position: absolute;
     top: 55%;
     left: 16.9%;
-    margin-left: 57px;
+    margin-left: 30px;
     transform: translate(-50%, -50%);
 }
 
 #current-track {
     margin-left: 20px;
+}
+
+.track-pill {
+   flex-grow: 1;
+   border: 1px solid #ccc;
+   border-radius: 15px;
+   padding: 10px;
+   font-size: 16px;
+   font-family: Arial, sans-serif;
+   background-color: transparent;
 }
 
 @keyframes spin {
