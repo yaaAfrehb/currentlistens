@@ -27,14 +27,15 @@ h1 {
     height: 350px;
     border: 1px solid #ccc;
     border-radius: 100%;
-    background: linear-gradient(45deg, #ff00d0, #c402ff, #0066ff);
-    
+    background: linear-gradient(45deg, #ff0000, #ffff00, #02ffea, #ff00c8);
     display: flex;
     align-items: center;
     justify-content: center;
     
+    /* Ensure your animation is explicitly set to infinite layout loops */
     animation: spin 3s linear infinite;
 }
+
 
 
 #center-hole {
