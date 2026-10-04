@@ -29,6 +29,8 @@ h1 {
     left: 16.9%;
     transform: translate(-50%, -50%);
     margin-left: 25px;
+    animation: spin 3s linear infinite;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #02ffea, #ff00c8);
 }
 
 #center-hole {
@@ -41,4 +43,13 @@ h1 {
     left: 16.9%;
     margin-left: 25px;
     transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
