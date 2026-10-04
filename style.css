@@ -57,11 +57,14 @@ h1 {
 .track-pill {
    flex-grow: 1;
    border: 1px solid #ccc;
-   border-radius: 15px;
+   border-radius: 25px;
    padding: 10px;
-   font-size: 16px;
+   font-size: 20px;
    font-family: Arial, sans-serif;
    background-color: transparent;
+   width: 500px;
+   padding: 18px 36px;
+   height: 47.5px;
 }
 
 .track-item {
@@ -77,12 +80,11 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     padding-left: 20px;
-    width: 550px;
 }
 
 #dashboard-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 50px;
     margin-top: 2em;
