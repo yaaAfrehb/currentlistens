@@ -3,7 +3,7 @@ h1 {
     margin-bottom: 1.5em;
 }
 
-#cd-player { 
+#cd-player-box { 
     width: 500px;
     height: 500px;
     background-color: #f0f0f0;
@@ -12,4 +12,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+#cd {
+    width: 350px;
+    height: 350px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55%;
+    left: 16.9%;
+    transform: translate(-50%, -50%);
 }
