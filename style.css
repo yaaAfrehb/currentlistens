@@ -1,15 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: #9c3b3b;
     background-image: 
-        radial-gradient(circle at 10% 20%, #ff0077 0%, transparent 40%),
-        radial-gradient(circle at 90% 10%, #f77f00 0%, transparent 45%),
-        radial-gradient(circle at 80% 80%, #ffd166 0%, transparent 50%),
-        radial-gradient(circle at 20% 80%, #4643fd 0%, transparent 45%);
+        radial-gradient(circle at 10% 20%, #ffdcb0 0%, transparent 40%),
+        radial-gradient(circle at 90% 10%, #df8440 0%, transparent 45%),
+        radial-gradient(circle at 80% 80%, #be5e2f 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, #74371d 0%, transparent 45%);
     background-size: 100% 100%;
     background-attachment: fixed;
     margin: 0;
     padding: 24px;
-    display: flex;
+  
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,12 +22,25 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    font-size: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: 300;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 1em;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    font-size: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: white;
 }
 #cd {
     width: 350px;
@@ -52,7 +68,6 @@ h2 {
     object-fit: cover;            
     border: 1px solid #ccc;       
     
-    /* THE CENTERING FIX: Floats precisely in the flex center */
     position: absolute;
     z-index: 1;
     
@@ -61,7 +76,6 @@ h2 {
 }
 
 
-/* Visibility triggers for the album art loading state */
 #cd-album-art[src=""] {
     opacity: 0;
 }
@@ -72,14 +86,13 @@ h2 {
 #cd-player-box { 
     width: 550px;
     height: 550px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #df8440;
     border-radius: 15px;
+    border-top: 10px solid #7c3b09;
+    border-bottom: 10px solid #7c3b09;
     padding: 30px;             
     box-sizing: border-box;     
     margin-left: 20px;
-    
-   
     display: flex;
     flex-direction: column;
     align-items: center;
