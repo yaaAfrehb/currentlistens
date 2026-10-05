@@ -2,20 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: #9c3b3b;
-    background-image: 
-        radial-gradient(circle at 10% 20%, #ffdcb0 0%, transparent 40%),
-        radial-gradient(circle at 90% 10%, #df8440 0%, transparent 45%),
-        radial-gradient(circle at 80% 80%, #be5e2f 0%, transparent 50%),
-        radial-gradient(circle at 20% 80%, #74371d 0%, transparent 45%);
-    background-size: 100% 100%;
+    /* 1. Link your image file name exactly (e.g., background.png) */
+    background-image: url('plasticbeachsunset.png');
+    
+    /* 2. STRETCH TO FIT: Scales the image to fill the screen completely */
+    background-size: cover;
+    
+    /* 3. CENTER IMAGE: Keeps the middle of the art focused on the screen */
+    background-position: center center;
+    
+    /* 4. PREVENT DUPLICATES: Stops the image from repeating like a tile */
+    background-repeat: no-repeat;
+    
+    /* 5. ANCHOR ARTWORK: Locks it in place so it stays still when scrolling */
     background-attachment: fixed;
+    
+    /* Keeps a fallback color matching your theme while the image downloads */
+    background-color: #bb2d3b; 
+
+    /* Layout centering for your dashboard */
     margin: 0;
     padding: 24px;
-  
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 
