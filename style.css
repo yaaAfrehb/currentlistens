@@ -3,6 +3,61 @@ h1 {
     margin-bottom: 1.5em;
 }
 
+#cd {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    
+    /* THE UPGRADE: Uses a smooth 0.8-second transition for when the background color changes */
+    background: var(--current-color, #e0e0e0);
+    transition: background 0.8s ease; 
+
+    /* THE CENTERING FIX: Locks the sub-layers perfectly down the middle crosshairs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    
+    animation: spin 3s linear infinite;
+}
+
+#cd-album-art {
+    width: 140px;                 
+    height: 140px;
+    border-radius: 50%;           
+    object-fit: cover;            
+    border: 1px solid #ccc;       
+    
+    /* THE CENTERING FIX: Floats precisely in the flex center */
+    position: absolute;
+    z-index: 1;
+    
+    opacity: 0;                   
+    transition: opacity 0.5s ease;
+}
+
+#center-hole {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    
+    /* MATCH BACKDROP: This matches your player case background (#f0f0f0) so it looks like a hollow hole! */
+    background-color: #f0f0f0; 
+    
+    /* THE CENTERING FIX: Sits exactly over the image midpoint on the top layer stack */
+    position: absolute;
+    z-index: 2; 
+}
+
+/* Visibility triggers for the album art loading state */
+#cd-album-art[src=""] {
+    opacity: 0;
+}
+#cd-album-art:not([src=""]) {
+    opacity: 1;
+}
 
 #cd-player-box { 
     width: 550px;
@@ -21,20 +76,6 @@ h1 {
     justify-content: space-between; 
 }
 
-
-#cd {
-    width: 350px;
-    height: 350px;
-    border: 1px solid #ccc;
-    border-radius: 100%;
-    background: linear-gradient(45deg, #ff0000, #ffff00, #02ffea, #ff00c8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* Ensure your animation is explicitly set to infinite layout loops */
-    animation: spin 3s linear infinite;
-}
 
 
 
