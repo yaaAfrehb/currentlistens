@@ -4,47 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Listens</title>
+    <!-- Include ColorThief library script tag here if it's missing in your project -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="spotifyjs.js"></script>
-
 
     <h1>What am I listening to right now?</h1>
-
-  
-    <div id="dashboard-row"> 
     
-        
+    <div id="dashboard-row">
         <div id="cd-player-box">
-            
-           
-           <!-- The CD Disc Container -->
+            <!-- The CD Disc Container -->
             <div id="cd">
-             <!-- NEW IMAGE TAG: This will hold the spinning album cover -->
-            <img id="cd-album-art" src="" alt="Album Art">
-    
-                <!-- The Center Hole Container -->
-                <div id="center-hole"></div>
+                <!-- NEW IMAGE TAG: This will hold the spinning album cover -->
+                <img id="cd-album-art" src="" alt="Album Art">
             </div>
+            <p id="current-track">Not playing anything right now!</p>
+        </div>
 
-            
-            <p id="current-track">Currently playing track: <strong>Take a Walk by Passion Pit</strong></p>
-            
-        </div> 
-    
         <div id="top-tracks">
             <h2>All time favorites</h2>
-            
             <ol id="top-tracks-list">
-                <li class="track-item"><div class="track-pill">Track 1</div></li>
-                <li class="track-item"><div class="track-pill">Track 2</div></li>
-                <li class="track-item"><div class="track-pill">Track 3</div></li>
-                <li class="track-item"><div class="track-pill">Track 4</div></li>
-                <li class="track-item"><div class="track-pill">Track 5</div></li>
+                <li class="track-item"><div class="track-pill">Dirty Harry <p class="track-artist">Gorillaz & Bootie Brown</p> </div></li>
+                <li class="track-item"><div class="track-pill">Rhinestone Eyes <p class="track-artist">Gorillaz</p> </div></li>
+                <li class="track-item"><div class="track-pill">19-2000 <p class="track-artist">Gorillaz</p> </div></li>
+                <li class="track-item"><div class="track-pill">On Melancholy Hill <p class="track-artist">Gorillaz</p> </div></li>
+                <li class="track-item"><div class="track-pill">Coffin Nails <p class="track-artist">MF DOOM</p> </div></li>
             </ol>
         </div> <!-- End of top-tracks -->
-
     </div> <!-- End of dashboard-row -->
+
+    <!-- MOVED TO THE BOTTOM: Script safely handles HTML selectors -->
+    <script src="spotifyjs.js"></script>
 </body>
 </html>
+

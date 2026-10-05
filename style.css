@@ -1,19 +1,42 @@
+body {
+    background-color: #9c3b3b;
+    background-image: 
+        radial-gradient(circle at 10% 20%, #ff0077 0%, transparent 40%),
+        radial-gradient(circle at 90% 10%, #f77f00 0%, transparent 45%),
+        radial-gradient(circle at 80% 80%, #ffd166 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, #4643fd 0%, transparent 45%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
 h1 {
     text-align: center;
     margin-bottom: 1.5em;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
 #cd {
     width: 350px;
     height: 350px;
     border: 1px solid #ccc;
     border-radius: 100%;
     
-    /* THE UPGRADE: Uses a smooth 0.8-second transition for when the background color changes */
+  
     background: var(--current-color, #e0e0e0);
     transition: background 0.8s ease; 
 
-    /* THE CENTERING FIX: Locks the sub-layers perfectly down the middle crosshairs */
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +60,6 @@ h1 {
     transition: opacity 0.5s ease;
 }
 
-#center-hole {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 1px solid #ccc;
-    
-    /* MATCH BACKDROP: This matches your player case background (#f0f0f0) so it looks like a hollow hole! */
-    background-color: #f0f0f0; 
-    
-    /* THE CENTERING FIX: Sits exactly over the image midpoint on the top layer stack */
-    position: absolute;
-    z-index: 2; 
-}
 
 /* Visibility triggers for the album art loading state */
 #cd-album-art[src=""] {
@@ -130,6 +140,12 @@ h1 {
     align-items: flex-start;
     gap: 50px;
     margin-top: 2em;
+}
+
+.track-artist {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
 }
 
 
