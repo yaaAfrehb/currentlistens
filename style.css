@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @font-face {
-    /* 1. Name your font anything you want here */
+   
     font-family: 'PlasticBeach'; 
     
-    /* 2. Match the exact filename of your font file, including the extension */
+    
     src: url('Plastic Beach.ttf') format('truetype'); 
     
     font-weight: normal;
@@ -20,11 +20,11 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
-    /* Ensures your text and cards sit safely on top of the blur layer */
+   
     z-index: 0; 
 }
 
-/* THE BLUR LAYER: Creates a dedicated canvas for the background image */
+
 body::before {
     content: "";
     position: fixed;
@@ -33,22 +33,22 @@ body::before {
     width: 100%;
     height: 100%;
     
-    /* 1. Link your image file name here */
+    
     background-image: url('plasticbeachsunset.png'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     
-    /* 2. THE BLUR FIX: Controls the strength of the blur (raise or lower the px) */
+   
     filter: blur(7px); 
     
-    /* 3. SCALING FIX: Scales up slightly to prevent white borders on the edges */
+    
     transform: scale(1.05); 
     
-    /* Pushes this image layer behind your text container cards */
+   
     z-index: -1; 
     
-    /* Fallback color matching your theme while the image downloads */
+    
     background-color: #bb2d3b; 
 }
 
@@ -68,14 +68,15 @@ h1 {
 h2 {
     text-align: center;
     margin-bottom: 1em;
-    font-family: 'Outfit', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'PlasticBeach', sans-serif;
+    letter-spacing: 3px;
     font-size: 48px;
     border: 1px solid #ffffff;
     border-radius: 15px;
     background-color: white;
     margin-top: 3.5px;
     margin-left: 0.5px;
+
 }
 #cd {
     width: 350px;
@@ -160,7 +161,7 @@ h2 {
    border-radius: 25px;
    padding: 10px;
    font-size: 20px;
-   font-family: Arial, sans-serif;
+   font-family: Outfit, sans-serif;
    background-color:white;
    width: 500px;
    padding: 18px 36px;
