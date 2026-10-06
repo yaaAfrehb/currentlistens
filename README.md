@@ -1,6 +1,6 @@
 # 🎵 Music Dashboard & Live Stream Player
 
-A highly responsive, retro-styled web player dashboard inspired by the vibrant warm palettes and aesthetics of Gorillaz' **Plastic Beach**. This site displays what I'm listening to in real time while tracking my top favorite tracks of the week using the Last.fm developer API.
+A highly responsive, retro-styled web player dashboard inspired by the vibrant warm palettes and aesthetics of Gorillaz's **Plastic Beach**. This site displays what I'm listening to in real time while tracking my top favorite tracks of the week using the Last.fm developer API.
 
 ## ✨ Features
 
@@ -20,7 +20,7 @@ Since this application operates purely on client-side frontend files, setting it
 
 1. **Clone or Download the Repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/yaaAfrehb/currentlistens.git
    ```
 
 2. **Configure Your Credentials:**
@@ -42,3 +42,6 @@ Since this application operates purely on client-side frontend files, setting it
 ├── spotifyjs.js        # API extraction logic
 └── plastic-beach.ttf   # Downloaded custom graffiti vector text rendering file
 ```
+## **Link**
+```text
+https://yaaafrehb.github.io/currentlistens/
