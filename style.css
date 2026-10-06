@@ -161,7 +161,7 @@ h2 {
    border-radius: 25px;
    padding: 10px;
    font-size: 20px;
-   font-family: Outfit, sans-serif;
+   font-family: 'Outfit', sans-serif;
    background-color:white;
    width: 500px;
    padding: 18px 36px;
@@ -177,7 +177,7 @@ h2 {
 }
 
 #top-tracks-list {
-    font-family: Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding-left: 20px;
